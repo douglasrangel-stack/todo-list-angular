@@ -12,4 +12,9 @@ import { TasksComponent } from './components/tasks/tasks.component';
 })
 export class AppComponent {
   title = 'todo-list-angular';
+  activeAddTask: boolean = false;
+
+  viewAddTask(value: boolean) {
+    this.activeAddTask = value;
+  }
 }

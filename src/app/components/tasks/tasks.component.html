@@ -1,5 +1,18 @@
-<app-task-item
-  *ngFor="let item of tasks"
-  [task]="item"
-  (onDeleteTask)="deleteTask($event)"
-></app-task-item>
+<div class="row">
+  <div class="col-md-8">
+    <div class="list-tasks">
+      <app-task-item
+        *ngFor="let item of tasks"
+        [task]="item"
+        (onDeleteTask)="deleteTask($event)"
+        (onToggleFinish)="toggleFinish($event)"
+      ></app-task-item>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <app-add-task
+      (onAddTask)="addTask($event)"
+      [ActiveViewAddTask]="viewAddTask"
+    ></app-add-task>
+  </div>
+</div>

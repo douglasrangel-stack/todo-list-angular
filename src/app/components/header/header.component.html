@@ -1,3 +1,16 @@
 <header>
   <h1>{{ title }}</h1>
+  @if (viewAddTask) {
+  <app-button
+    text="Fechar"
+    color="red"
+    (btnClick)="ViewForm(false)"
+  ></app-button>
+  }@else {
+  <app-button
+    text="Adicionar Tarefa"
+    color="green"
+    (btnClick)="ViewForm(true)"
+  ></app-button>
+  }
 </header>

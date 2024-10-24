@@ -11,6 +11,18 @@
       "tarefa": "React",
       "categoria": "faculdade",
       "concluido": true
+    },
+    {
+      "id": "3703",
+      "tarefa": "Vue",
+      "categoria": "faculdade",
+      "concluido": false
+    },
+    {
+      "id": "fb4f",
+      "tarefa": "Javascript",
+      "categoria": "faculdade",
+      "concluido": false
     }
   ]
 }

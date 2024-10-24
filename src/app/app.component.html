@@ -1,5 +1,5 @@
 <div class="container">
-  <app-header></app-header>
-  <app-tasks></app-tasks>
+  <app-header (onViewAddTask)="viewAddTask($event)"></app-header>
+  <app-tasks [viewAddTask]="activeAddTask"></app-tasks>
 </div>
 <router-outlet />
